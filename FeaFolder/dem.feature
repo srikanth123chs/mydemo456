@@ -21,16 +21,11 @@ Feature: Customer registration
     Examples: 
       | user  | pass   |
       | demo  | demo   |
-      | mary  | jane   |
-      | peter | parker |
+      
+ 
 
   @Regression1
   Scenario Outline: customer  login
     When customer provides  the credentials as "<user>" and "<pass>"
     Then login is successful
 
-    Examples: 
-      | user  | pass   |
-      | demo  | demo   |
-      | mary  | jane   |
-      | peter | parker |
